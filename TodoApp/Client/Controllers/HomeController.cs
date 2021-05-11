@@ -16,6 +16,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
             this.tokenAcquisition = tokenAcquisition;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
